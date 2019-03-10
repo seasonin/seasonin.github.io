@@ -3,9 +3,9 @@
   <entry>
     <title><![CDATA[useGit]]></title>
     <url>%2F2019%2F03%2F10%2FuseGit%2F</url>
-    <content type="text"><![CDATA[git常用命令1234mkdir &lt;filename&gt; 创建目录cd &lt;filename&gt; 跳到具体目录pwd 显示当前目录git init 初始化git仓库]]></content>
+    <content type="text"><![CDATA[git常用命令1234567891011121314151617181920212223242526272829303132mkdir &lt;file&gt; 创建文件夹cd &lt;file&gt; 跳到具体文件夹pwd 显示当前路径git init 初始化git仓库git add &lt;filename&gt; 提交文件到仓库git commit -m&quot;describe&quot; 添加说明git status 仓库当前的状态git diff 查看修改的内容git log 查看历史记录，可查看版本号git log --pretty=oneline 查看一行记录git reflog 查看历史命令git reset --hard HEAD^ 返回到上一版本HEAD为当前版本，HEAD^为上一版本，同样HEAD^^为上上版本git reset --hard 版本号 返回到某一具体版本git checkout --&lt;filename&gt; 丢弃工作区的内容，即add提交的内容git reset HEAD &lt;filename&gt; 丢弃暂存区，回到工作区，即丢弃commit的内容git rm file 从版本库中删除文件rm file 删除文件git checkout --file 从版本库的文件替换工作区的文件ssh-keygen -t rsa -C &quot;email&quot; 创建SSH KEYgit remote add origin 仓库地址 关联远程库，库名origin可设其它git push -u origin master 第一次向远程库origin推送master分支的所有内容 git push origin master 向远程库origin推送master分支的最新内容git clone 仓库地址 克隆远程仓库，库名默认origin]]></content>
       <categories>
-        <category>知识</category>
+        <category>学习</category>
         <category>命令</category>
       </categories>
       <tags>
@@ -15,7 +15,7 @@
   <entry>
     <title><![CDATA[第一次]]></title>
     <url>%2F2019%2F03%2F10%2FfirstTime%2F</url>
-    <content type="text"><![CDATA[本人的第一个博客开通啦！我是谁？我从哪里来？又到那里去？这是一个有深意的问题。本人热爱学习，正在前端与后台领域奋斗 以下为初次练习 列表1 列表2 列表项 列表项 vue导航 &lt;html&gt;一行代码嵌入区&lt;/html&gt; 123456&lt;html&gt;&lt;head&gt;标题&lt;/head&gt;&lt;body&gt; &lt;div&gt;&lt;p&gt;body主体&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 应用内容]]></content>
+    <content type="text"><![CDATA[本人的第一个博客开通啦！我是谁？我从哪里来？又到那里去？这是一个有深意的问题。本人热爱学习，正在前端与后台领域奋斗 以下为初次练习Markdown 列表1 列表2 列表项 列表项 vue导航 斜体字加粗字 &lt;html&gt;一行代码嵌入区&lt;/html&gt; 123456&lt;html&gt;&lt;head&gt;标题&lt;/head&gt;&lt;body&gt; &lt;div&gt;&lt;p&gt;body主体&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 应用内容]]></content>
       <categories>
         <category>我们聊聊</category>
       </categories>
