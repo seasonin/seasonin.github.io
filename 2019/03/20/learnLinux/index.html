@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="seasonin">
 <meta property="og:description" content="ls [-adl]：列出目录    -a ：全部的文件，连同隐藏档( 开头为 . 的文件) 一起列出来-d ：仅列出目录本身，而不是列出目录内的文件数据-l ：长数据串列出，包含文件的属性与权限等等数据  cd: 切换目录  cd filenamecd ~  切换到/root目录cd..  切换到上一级目录  pwd [-P]: 显示当前[确实完整的]目录   mkdir [-mp]: 创建一个">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-20T15:59:41.907Z">
+<meta property="og:updated_time" content="2019-03-20T16:31:24.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learnLinux">
 <meta name="twitter:description" content="ls [-adl]：列出目录    -a ：全部的文件，连同隐藏档( 开头为 . 的文件) 一起列出来-d ：仅列出目录本身，而不是列出目录内的文件数据-l ：长数据串列出，包含文件的属性与权限等等数据  cd: 切换目录  cd filenamecd ~  切换到/root目录cd..  切换到上一级目录  pwd [-P]: 显示当前[确实完整的]目录   mkdir [-mp]: 创建一个">
@@ -419,12 +419,24 @@
                 
               
 
-              <time title="创建时间：2019-03-20 20:27:05 / 修改时间：23:59:41" itemprop="dateCreated datePublished" datetime="2019-03-20T20:27:05+08:00">2019-03-20</time>
+              <time title="创建时间：2019-03-20 20:27:05" itemprop="dateCreated datePublished" datetime="2019-03-20T20:27:05+08:00">2019-03-20</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-21 00:31:24" itemprop="dateModified" datetime="2019-03-21T00:31:24+08:00">2019-03-21</time>
               
             
           </span>
@@ -544,6 +556,9 @@
 <p>fsck [-t 文件系统] [-ACay] 装置名称<br>磁盘检验<br>选项：<br>-t : 给定档案系统的型式，若在 /etc/fstab 中已有定义或 kernel 本身已支援的则不需加上此参数<br>-s : 依序一个一个地执行 fsck 的指令来检查<br>-A : 对/etc/fstab 中所有列出来的 分区（partition）做检查<br>-C : 显示完整的检查进度<br>-d : 打印出 e2fsck 的 debug 结果<br>-p : 同时有 -A 条件时，同时有多个 fsck 的检查一起执行<br>-R : 同时有 -A 条件时，省略 / 不检查<br>-V : 详细显示模式<br>-a : 如果检查有错则自动修复<br>-r : 如果检查有错则由使用者回答是否修复<br>-y : 选项指定检测每个文件是自动输入yes，在不确定那些是不正常的时候，可以执行 # fsck -y 全部检查修复。</p>
 <p>mount [-t 文件系统] [-L Label名] [-o 额外选项] [-n]  装置文件名  挂载点<br>磁盘挂载</p>
 <p>umount [-fn] 装置文件名或挂载点<br>磁盘卸载<br>选项：<br>-f ：强制卸除！可用在类似网络文件系统 (NFS) 无法读取到的情况下；<br>-n ：不升级 /etc/mtab 情况下卸除。</p>
+<hr>
+<h3 id="Linux-yum命令"><a href="#Linux-yum命令" class="headerlink" title="Linux yum命令"></a>Linux yum命令</h3><p>yum [options] [command] [package …]<br>options：可选，选项包括-h（帮助），-y（当安装过程提示选择全部为”yes”），-q（不显示安装的过程）等等。<br>command：要进行的操作。<br>package操作的对象。</p>
+<h3 id="yum常用命令"><a href="#yum常用命令" class="headerlink" title="yum常用命令"></a>yum常用命令</h3><p>1.列出所有可更新的软件清单命令：yum check-update<br>2.更新所有软件命令：yum update<br>3.仅安装指定的软件命令：yum install &lt;package_name&gt;<br>4.仅更新指定的软件命令：yum update &lt;package_name&gt;<br>5.列出所有可安裝的软件清单命令：yum list<br>6.删除软件包命令：yum remove &lt;package_name&gt;<br>7.查找软件包 命令：yum search <keyword><br>8.清除缓存命令:<br>yum clean packages: 清除缓存目录下的软件包<br>yum clean headers: 清除缓存目录下的 headers<br>yum clean oldheaders: 清除缓存目录下旧的 headers<br>yum clean, yum clean all (= yum clean packages; yum clean oldheaders) :清除缓存目录下的软件包及旧的headers</keyword></p>
 
       
     </div>
@@ -770,7 +785,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux磁盘管理"><span class="nav-number">1.</span> <span class="nav-text">Linux磁盘管理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux磁盘管理"><span class="nav-number">1.</span> <span class="nav-text">Linux磁盘管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-yum命令"><span class="nav-number">2.</span> <span class="nav-text">Linux yum命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yum常用命令"><span class="nav-number">3.</span> <span class="nav-text">yum常用命令</span></a></li></ol></div>
             
 
           </div>
