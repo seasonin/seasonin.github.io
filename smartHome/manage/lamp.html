@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯光控制</title>
+    <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-switch.css" type="text/css" rel="stylesheet">
+    <link href="../css/set.css" type="text/css" rel="stylesheet">
+    <link href="../css/lamp.css" type="text/css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/bootstrap-switch.js"></script>
+    <script src="../js/lamp.js"></script>
+</head>
+<body>
+<div class="lamp-header">
+    <ul class="lamp-navbar">
+        <li class="lamp-nav-item">
+            <span>智能家居&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;灯光控制</span>
+        </li>
+    </ul>
+</div>
+<div class="lamp-container">
+    <div class="lamp-produce">
+        <dl class="lamp-introduce">
+            <dt>产品信息</dt>
+        </dl>
+        <dl class="selectable">
+            <dt id="info" class="info">基本信息</dt>
+            <dt id="device">虚拟设备</dt>
+        </dl>
+    </div>
+    <div class="lamp-show">
+    <div class="lamp-info">
+        <div class="lamp-show-nav info"><h3>基本信息</h3></div>
+        <div class="lamp-show-content">
+            <p>产品名称：&nbsp;&nbsp;照明wifi灯</p>
+            <p>产品类型：&nbsp;&nbsp;智能家居、配件、照明</p>
+            <p>技术方案：&nbsp;&nbsp;wifi、移动数据</p>
+            <p>分享功能：&nbsp;&nbsp;已开启</p>
+            <p>创建时间：&nbsp;&nbsp;2018年9月28日</p>
+        </div>
+    </div>
+    <div class="lamp-device">
+        <div class="lamp-show-nav device"><h3>虚拟设备</h3></div>
+            <div  class="lamp-switch">
+                <span>客厅吊灯：</span>
+                <div class="lamp-slider-value1"><span>0</span></div>
+                <div class="lamp-slider1"></div>
+                <div class="switch switch-mini">
+                    <input id="notification1" type="checkbox"/>
+                </div>
+            </div>
+
+            <div  class="lamp-switch">
+                <span>厨房灯具：</span>
+                <div class="lamp-slider-value2"><span>0</span></div>
+                <div class="lamp-slider2"></div>
+                <div class="switch switch-mini">
+                    <input id="notification2" type="checkbox" />
+                </div>
+
+            </div>
+
+            <div  class="lamp-switch">
+                <span>书房灯具：</span>
+                <div class="lamp-slider-value3"><span>0</span></div>
+                <div class="lamp-slider3"></div>
+                <div class="switch switch-mini">
+                    <input id="notification3" type="checkbox" />
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
